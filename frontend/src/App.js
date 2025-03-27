@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import HomePage from './Components/Home';
-import Upload from './Components/Upload';
-import Formm from './Components/Formm';
 import Navbar from './Components/Navbar';
-// import AIChatbotResult from './Components/AIBotResult';
+import HomePage from './Components/Home';
 import Apage from './Components/Ab';
+import Upload from './Components/Upload';
+// import Formm from './Components/Formm';
+// import AIChatbotResult from './Components/AIBotResult';
 
 function App() {
   return (
@@ -15,10 +15,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/upload" element={<Upload />} />
-        <Route path="/form" element={<Formm />} />
         <Route path="/about" element={<Apage />} />
-        <Route path="/chatbot" element={<AIChatbotResult />} />
+        <Route path="/upload" element={<Upload />} />
+        {/* <Route path="/form" element={<Formm />} /> */}
+        {/* <Route path="/chatbot" element={<AIChatbotResult />} /> */}
       </Routes>
     </Router>
   );
