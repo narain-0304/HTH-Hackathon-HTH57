@@ -1,11 +1,10 @@
-
-
 import React, { useState, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import axios from "axios";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import Footer from "./Footer";
 import "./Upload.css";
 
 function Upload() {
@@ -287,6 +286,7 @@ function Upload() {
       )}
     </div>
   );
+  <Footer/>
   
 }
 
